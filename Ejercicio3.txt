@@ -1,0 +1,24 @@
+function greatestNumber(arr1,arr2){
+    let maximum = 0;
+
+    // Traversing the first array
+    for(let i=0;i<arr1.length;i++){
+        if(maximum<arr1[i]){
+            maximum = arr1[i];
+        }
+    }
+    
+    // Traversing the second array
+    for(let i=0;i<arr2.length;i++){
+        if(maximum<arr2[i]){
+            maximum = arr2[i]; 
+        }
+    }
+
+    return maximum;
+}
+
+let arr1 = [49,213,43,2,34,12,32];
+let arr2 = [23,564,33,3,45,34,21]; 
+
+console.log("El mayor de los 2 arrays es: " + greatestNumber(arr1,arr2));

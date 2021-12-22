@@ -1,0 +1,9 @@
+//ejercicio #2
+
+const numeros=[3,5,7,1,6];
+
+numeros = numeros.sort(function(x,y){
+    return y-x
+});
+
+console.log(numeros);
